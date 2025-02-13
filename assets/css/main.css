@@ -2640,6 +2640,20 @@ time.icon span
   border-right: 1px solid #eee
 }
 
+/*****************************
+* Note box
+*****************************/
+blockquote {
+  background-color: #ededed;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+blockquote + p {
+  text-align: right;
+}
+
 /******************************
 * Google Calendar iFrame
 ******************************/
