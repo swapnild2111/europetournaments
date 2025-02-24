@@ -2393,7 +2393,13 @@ time.icon span
 
 /* ------------------------------------------------
 # Events Section
---------------------------------------------------
+--------------------------------------------------*/
+
+.jsx-3212391178 .eapp-events-calendar-list-item-imageContainer {
+  display: none;
+}
+
+/*
 .calendar {
   font-family: var(--nav-font);
 }
