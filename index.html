@@ -39,6 +39,25 @@
     gtag('config', 'G-GXW0S6E14D');
   </script>
 
+  <!-- Below script removed image from list view calendar -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new MutationObserver(() => {
+        // Remove elements with class 'eapp-events-calendar-list-item-imageContainer'
+        document.querySelectorAll(".eapp-events-calendar-list-item-imageContainer").forEach(element => {
+          element.remove();
+        });
+      });
+
+      // Ensure document.body exists before observing
+      if (document.body) {
+        observer.observe(document.body, { childList: true, subtree: true });
+      } else {
+        console.error("document.body is not available for MutationObserver");
+      }
+    });
+  </script>
+
   <!-- =======================================================
   * Template Name: QuickStart
   * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
